@@ -76,7 +76,7 @@ export const TaskForm = ({ onClose }) => {
           Deadline date
         </label>
         <input
-          className={css.input}
+          className={css.dateInput}
           type="date"
           name="deadline"
           id="date-input"
