@@ -2,7 +2,7 @@
   "name": "react-task-meneger",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://MykhailoMamin/react-task-manager",
+  "homepage": "https://MykhailoMamin.github.io/react-task-manager",
   "dependencies": {
     "@reduxjs/toolkit": "^2.15.0",
     "@testing-library/jest-dom": "^5.16.3",
