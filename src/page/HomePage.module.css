@@ -112,23 +112,19 @@
 @media screen and (max-width: 480px) {
   .page {
     gap: 16px;
-    padding: 24px 16px;
+    padding: 16px 12px;
   }
 
   .section {
-    padding: 16px;
+    padding: 18px 14px;
   }
 
-  .stats {
-    grid-template-columns: 1fr;
-    gap: 12px;
+  .addButton {
+    margin-bottom: 16px;
+    padding: 11px 20px;
   }
 
   .title {
     font-size: 23px;
-  }
-
-  .description {
-    font-size: 14px;
   }
 }
