@@ -1,0 +1,148 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  /* Reset fieldset */
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.label {
+  color: #374151;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 12px 14px;
+
+  color: #1f2937;
+  font-family: inherit;
+  font-size: 14px;
+
+  background-color: #fafaff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  outline: none;
+
+  transition:
+    border-color 200ms ease,
+    box-shadow 200ms ease;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: #7252e9;
+  box-shadow: 0 0 0 3px rgb(114 82 233 / 12%);
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: #9ca3af;
+}
+
+.textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.priorityGroup {
+  display: flex;
+  gap: 12px;
+}
+
+.priorityOption {
+  flex: 1;
+  cursor: pointer;
+}
+
+.priorityOption input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.priorityOption span {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+
+  transition: all 200ms ease;
+}
+
+.high {
+  color: #dc2626;
+}
+
+.medium {
+  color: #d97706;
+}
+
+.low {
+  color: #16a34a;
+}
+
+.priorityOption input:checked + .high {
+  background-color: #fef2f2;
+  border-color: #dc2626;
+}
+
+.priorityOption input:checked + .medium {
+  background-color: #fffbeb;
+  border-color: #d97706;
+}
+
+.priorityOption input:checked + .low {
+  background-color: #f0fdf4;
+  border-color: #16a34a;
+}
+
+.priorityOption input:focus-visible + span {
+  outline: 2px solid #7252e9;
+  outline-offset: 3px;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 13px;
+
+  color: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+
+  background-color: #7252e9;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  transition:
+    background-color 200ms ease,
+    transform 200ms ease;
+}
+
+.submitButton:hover {
+  background-color: #6040d5;
+}
+
+.submitButton:active {
+  transform: scale(0.98);
+}

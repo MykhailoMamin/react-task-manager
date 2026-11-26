@@ -1,0 +1,112 @@
+.menu {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.trigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  color: #6b7280;
+  background: transparent;
+  border: 1px solid #e5e7eb;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.trigger:hover {
+  color: #7252e9;
+  background: #f7f5ff;
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 9px);
+  right: 0;
+  z-index: 20;
+  width: 210px;
+  padding: 8px;
+  background: #fff;
+  border: 1px solid #eeeef4;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgb(31 41 55 / 9%);
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  min-height: 38px;
+  padding: 0 10px;
+  color: #4b5563;
+  font-family: inherit;
+  font-size: 13px;
+  text-align: left;
+  background: transparent;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.menuItem:hover {
+  color: #7252e9;
+  background: #f7f5ff;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+.statusList {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 4px 0 5px;
+}
+
+.statusOption {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  min-height: 34px;
+  padding: 0 10px;
+  color: #6b7280;
+  font-family: inherit;
+  font-size: 13px;
+  text-align: left;
+  background: transparent;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.statusOption span {
+  flex: 1;
+}
+
+.statusOption:hover,
+.statusOption.active {
+  color: #7252e9;
+  background: #f7f5ff;
+}
+
+.divider {
+  height: 1px;
+  margin: 6px 0;
+  background: #eeeef4;
+}
+
+.deleteButton {
+  justify-content: flex-start;
+  color: #ef4444;
+}
+
+.deleteButton:hover {
+  color: #dc2626;
+  background: #fef2f2;
+}
